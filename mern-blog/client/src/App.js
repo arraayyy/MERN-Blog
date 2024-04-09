@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // Pages
 import Home from './pages/Home';
 import About from './pages/About';
-import Articles from './pages/Articles';
+import Article from './pages/Article';
 import ArticlesList from './pages/ArticlesList';
+import NotFound from './pages/NotFound';
 
 // Components
 import Navbar from './components/Navbar';
@@ -18,7 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/articles-list" element={<ArticlesList />} /> 
-          <Route path="/article/:name" element={<Articles />} />
+          <Route path="/article/:name" element={<Article />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
