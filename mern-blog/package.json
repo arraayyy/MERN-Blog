@@ -1,19 +1,19 @@
 {
   "name": "mern-blog",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Blog website using MERN stack",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon"
   },
   "keywords": [],
-  "author": "",
+  "author": "Roe Ann Kim Codoy",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "nodemon": "^3.1.0"
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19"
   }
 }
